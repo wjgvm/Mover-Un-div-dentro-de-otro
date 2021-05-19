@@ -1,0 +1,37 @@
+* {
+    /* establece que el tamaño de
+     la caja sera desde los bordes*/
+    box-sizing: border-box;
+}
+
+body {
+    /* quita los magenes de las cajas*/
+    margin: 0;
+    background-color: aqua;
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    width: 450px;
+    height: 450px;
+    /* align-items: center;
+    justify-content: center; */
+    background-color: rgba(245, 245, 245, 0.5);
+    overflow: hidden;
+}
+.box{
+    /* el hijo es bueno y obedece al padre :)*/
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(25, 25, 25, 0.5);
+    pointer-events: none;
+    text-align: center;
+    vertical-align: text-bottom;
+}
